@@ -1,6 +1,3 @@
-@php
-$configData = Helper::applClasses();
-@endphp
 @extends('layouts/fullLayoutMaster')
 
 @section('title', 'Login Page')
