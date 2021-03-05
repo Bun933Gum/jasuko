@@ -372,17 +372,18 @@ It was a pleasure working with you and your team. We hope you will keep us in mi
           <form>
             <div class="form-group">
               <label for="customer-name" class="form-label">Customer Name</label>
-              <input type="text" class="form-control" id="customer-name" placeholder="John Doe" />
+              <input type="text" class="form-control" name="customer_name" id="customer-name" placeholder="John Doe" />
             </div>
             <div class="form-group">
               <label for="customer-email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="customer-email" placeholder="example@domain.com" />
+              <input type="email" class="form-control" name="customer_email" id="customer-email" placeholder="example@domain.com" />
             </div>
             <div class="form-group">
               <label for="customer-address" class="form-label">Customer Address</label>
               <textarea
                 class="form-control"
                 id="customer-address"
+                name="customer_address"
                 cols="2"
                 rows="2"
                 placeholder="1307 Lady Bug Drive New York"
@@ -390,15 +391,16 @@ It was a pleasure working with you and your team. We hope you will keep us in mi
             </div>
             <div class="form-group position-relative">
               <label for="customer-country" class="form-label">Country</label>
-              <select class="form-control" id="customer-country" name="customer-country">
+              <select class="form-control" name="customer_country" id="customer-country" name="customer-country">
                 <option label="select country"></option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Philippine">Philippine</option>
+                <option value="Singapore">Singapore</option>
                 <option value="Australia">Australia</option>
-                <option value="Canada">Canada</option>
+                <option value="Japan">Japan</option>
                 <option value="Russia">Russia</option>
                 <option value="Saudi Arabia">Saudi Arabia</option>
-                <option value="Singapore">Singapore</option>
-                <option value="Sweden">Sweden</option>
-                <option value="Switzerland">Switzerland</option>
                 <option value="United Kingdom">United Kingdom</option>
                 <option value="United Arab Emirates">United Arab Emirates</option>
                 <option value="United States of America">United States of America</option>
@@ -406,7 +408,7 @@ It was a pleasure working with you and your team. We hope you will keep us in mi
             </div>
             <div class="form-group">
               <label for="customer-contact" class="form-label">Contact</label>
-              <input type="number" class="form-control" id="customer-contact" placeholder="763-242-9206" />
+              <input type="number" class="form-control" name="customer_contact" id="customer-contact" placeholder="763-242-9206" />
             </div>
             <div class="form-group d-flex flex-wrap mt-2">
               <button type="button" class="btn btn-primary mr-1" data-dismiss="modal">Add</button>

@@ -204,3 +204,7 @@ Route::get('/maps/leaflet', 'ChartsController@maps_leaflet')->name('map-leaflet'
 
 // locale Route
 Route::get('lang/{locale}', [LanguageController::class, 'swap']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
