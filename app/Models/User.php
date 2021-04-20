@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
@@ -18,7 +18,7 @@ class User extends Authenticatable implements MustVerifyEmail
    * @var array
    */
   protected $fillable = [
-    'name', 'email', 'password',
+    'name', 'username', 'email', 'password',
   ];
 
   /**
@@ -27,7 +27,7 @@ class User extends Authenticatable implements MustVerifyEmail
    * @var array
    */
   protected $hidden = [
-    'password', 'remember_token',
+    'password', 'remember_token', 'password_confirmation',
   ];
 
   /**

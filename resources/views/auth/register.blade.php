@@ -46,9 +46,18 @@
         <form class="auth-register-form mt-2" method="POST" action="{{ route('register') }}">
           @csrf
           <div class="form-group">
-            <label for="register-username" class="form-label">Username</label>
-            <input type="text" class="form-control @error('name') is-invalid @enderror" id="register-username" name="name" placeholder="johndoe" aria-describedby="register-username" tabindex="1" autofocus value="{{ old('name') }}" />
+            <label for="register-name" class="form-label">Account Name</label>
+            <input type="text" class="form-control @error('name') is-invalid @enderror" id="register-name" name="name" placeholder="johndoe" aria-describedby="register-username" tabindex="1" autofocus value="{{ old('name') }}" />
             @error('name')
+              <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+              </span>
+            @enderror
+          </div>
+          <div class="form-group">
+            <label for="register-username" class="form-label">Username</label>
+            <input type="text" class="form-control @error('name') is-invalid @enderror" id="register-username" name="username" placeholder="johndoe" aria-describedby="register-username" tabindex="1" autofocus value="{{ old('name') }}" />
+            @error('username')
               <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
               </span>
